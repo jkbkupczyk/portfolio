@@ -1,0 +1,180 @@
+@media screen and (max-width: 480px){
+    #project-list, #about-me, #projects, #skills, #contact{
+        display: flex !important;
+        flex-flow: column wrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headers{
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgba(248, 152, 32, 0.8);
+}
+
+.headers{
+    margin-left: 40px;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin: 0 auto;
+}
+
+#main-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 8px #b3b3b3;
+}
+
+#display{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-me{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#project-list{
+    display: grid;
+    grid-template-areas:
+    '. pr1 pr2 pr3 .'
+    '. pr4 pr5 pr6 .';
+    align-items: center;
+    grid-row-gap: 5vh;
+    grid-column-gap: 5vw;
+}
+
+.project{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.project-description p{
+    text-align: center;
+    justify-content: center;
+}
+
+#project-1{
+    grid-area: pr1;
+}
+
+#project-2{
+    grid-area: pr2;
+}
+
+#project-3{
+    grid-area: pr3;
+}
+
+#project-4{
+    grid-area: pr4;
+}
+
+#project-5{
+    grid-area: pr5;
+}
+
+#project-6{
+    grid-area: pr6;
+}
+
+#skills-list{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#socials, #contact-form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+form{
+    padding: 50px;
+}
+
+#contact-form form, form *{
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+}
+
+#name, #email, #msg{
+    padding: 5px 10px;
+    width: 66%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid black !important;
+    background: none;
+    font-size: 1rem;
+    margin-top: 20px
+}
+
+button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button{
+    align-content: center;
+}
+
+textarea{
+    resize: vertical;
+}
+
+footer{
+    position: relative;
+}
+
+.footer-content{
+    display: flex;
+    height: 2vmax;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(248, 152, 32, 0.8);
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
