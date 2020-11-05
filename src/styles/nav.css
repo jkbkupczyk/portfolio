@@ -1,0 +1,54 @@
+@media screen and (max-width: 640px){
+    #nav-button{
+        min-width: 25%;
+        overflow: visible;
+    }
+}
+
+#nav-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(156, 91, 11, 0.8);
+    background-color: rgba(248, 152, 32, 0.8);
+}
+
+#nav-content a{
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.nav-link:hover{
+    animation: push 0.25s linear;
+}
+
+.nav-link {
+    display: inline-block;
+    align-content: center;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transform: perspective(1px) translateZ(0);
+}
+
+@keyframes push {
+    50% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}

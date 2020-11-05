@@ -12,6 +12,7 @@
         padding: 0;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     #display-about{
@@ -22,10 +23,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 0;
     }
 
     #about-text{
         grid-area: text;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 
     #photo{
@@ -92,6 +97,7 @@ img{
 }
 
 #about-text{
+    display: inline;
     text-align: center;
     align-self: center;
     margin-right: 10vh;
@@ -100,6 +106,25 @@ img{
 #about-me{
     display: flex;
     flex-flow: column wrap;
+}
+
+#easter-egg{
+    display: inline-block;
+    width: 32px;
+}
+
+#easter-egg:hover{
+    cursor: pointer;
+    animation: easter-egg 0.5s linear infinite;
+}
+
+@keyframes easter-egg{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 #project-list{
@@ -146,6 +171,37 @@ img{
 
 #project-6{
     grid-area: pr6;
+}
+
+.project-github:hover{
+    animation: blob 0.1s linear 6 alternate;
+}
+
+@keyframes blob {
+    0% {
+        transform: translateY(-1px);
+        -webkit-transform: translateY(-1px);
+    }
+    25%{
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(-4px);
+        -webkit-transform: translateY(-4px);
+    }
+    75%{
+        transform: translateY(-6px);
+        -webkit-transform: translateY(-6px); 
+    }
+    100% {
+        transform: translateY(-7px);
+        -webkit-transform: translateY(-7px);
+    }
 }
 
 #skills-list{
@@ -195,6 +251,45 @@ img{
 
 #s8{
     grid-area: s8;
+}
+
+.skill-image:hover{
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce{
+    12.5%{
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    25%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    37.5%{
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    50%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    62.5%{
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    75%{
+        -webkit-transform: scale(1.10);
+        transform: scale(1.10);
+    }
+    87.5%{
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 #socials, #contact-form{
@@ -261,4 +356,76 @@ footer{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
+
+.social:hover{
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(2deg);
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+        -webkit-transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        transform: translateX(2px) rotate(1deg);
+        -webkit-transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        transform: translateX(1px) rotate(0);
+        -webkit-transform: translateX(1px) rotate(0);
+    }
+    100% {
+        transform: translateX(-1px) rotate(0);
+        -webkit-transform: translateX(-1px) rotate(0);
+    }
+}
+
+@keyframes sweep{
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#form-info{
+    font-size: larger;
+}
+
+.project-image{
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
 }
