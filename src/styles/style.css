@@ -1,15 +1,35 @@
-@media screen and (max-width: 480px){
-    #project-list, #about-me, #projects, #skills, #contact{
+@media screen and (max-width: 640px){
+    #project-list, #about-me, #projects{
         display: flex !important;
         flex-flow: column wrap !important;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 
     .headers{
-        margin-left: 0;
+        margin: 0;
+        padding: 0;
         justify-content: center;
         align-items: center;
+    }
+
+    #display-about{
+        display: grid !important;
+        grid-template-areas: 
+        '. image .'
+        '. text .';
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-text{
+        grid-area: text;
+    }
+
+    #photo{
+        grid-area: image;
     }
 }
 
@@ -33,11 +53,25 @@ body{
     margin: 0 auto;
 }
 
+.imgs{
+    width: 64px;
+    height: 64px;
+}
+
+img{
+    object-fit: cover !important;
+}
+
+.inactive{
+    pointer-events: none;
+}
+
 #main-container{
     display: flex;
     flex-flow: column wrap;
     width: 100%;
     max-width: 1080px;
+    min-width: 480px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -45,11 +79,22 @@ body{
     box-shadow: 0 0 8px #b3b3b3;
 }
 
-#display{
+#display-about{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vh 0 10vh;
+}
+
+#photo img{
+    width: 35vh;
+    border-radius: 45%;
+}
+
+#about-text{
+    text-align: center;
+    align-self: center;
+    margin-right: 10vh;
 }
 
 #about-me{
@@ -65,6 +110,7 @@ body{
     align-items: center;
     grid-row-gap: 5vh;
     grid-column-gap: 5vw;
+    align-items: stretch;
 }
 
 .project{
@@ -74,7 +120,7 @@ body{
 }
 
 .project-description p{
-    text-align: center;
+    text-align: justify;
     justify-content: center;
 }
 
@@ -103,14 +149,52 @@ body{
 }
 
 #skills-list{
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    grid-template-areas: 
+    '. s1 s2 s3 s4 .'
+    '. s5 s6 s7 s8 .';
+    align-items: center;
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
 }
 
-.row{
+.skill{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#s1{
+    grid-area: s1;
+}
+
+#s2{
+    grid-area: s2;
+}
+
+#s3{
+    grid-area: s3;
+}
+
+#s4{
+    grid-area: s4; 
+}
+
+#s5{
+    grid-area: s5;    
+}
+
+#s6{
+    grid-area: s6; 
+}
+
+#s7{
+    grid-area: s7;
+}
+
+#s8{
+    grid-area: s8;
 }
 
 #socials, #contact-form{
@@ -169,7 +253,7 @@ footer{
 
 .footer-content{
     display: flex;
-    height: 2vmax;
+    height: 30px;
     width: 100%;
     bottom: 0px;
     background-color: rgba(248, 152, 32, 0.8);
