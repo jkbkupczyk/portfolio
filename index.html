@@ -1,269 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio">
-        <meta name="author" content="Jakub Kupczyk">
-        <meta name="robots" content="index, follow">
-        <meta name="keywords" content="portfolio, cv, backend developer, developer, backend, github, linkedin">
 
-        <link rel="shortcut icon" href="favicon.png" type="image/png">
-        <!-- Favicon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Jakub Kupczyk">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="portfolio, cv, backend developer, developer, backend, github, linkedin">
 
-        <link rel="stylesheet" href="src/styles/style.css" type="text/css">
-        <link rel="stylesheet" href="src/styles/nav.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- Favicon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 
-        <title>Jakub Kupczyk - Portfolio</title>
-    </head>
-    <body>
+    <link rel="stylesheet" href="src/styles/style.css" type="text/css">
+    <link rel="stylesheet" href="src/styles/nav.css" type="text/css">
 
-        <nav>
-            <div id="nav-wrapper">
-                <div id="nav-content">
-                    <a href="#about-me" class="nav-link">ABOUT ME</a>
-                    <a href="#projects" class="nav-link">MY PROJECTS</a>
-                    <a href="#skills" class="nav-link">SKILLS</a>
-                    <a href="#contact" class="nav-link">CONTACT ME</a>
-                </div>
+    <title>Jakub Kupczyk - Portfolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <div id="nav-wrapper">
+            <div id="nav-content">
+                <a href="#about-me" class="nav-link">ABOUT ME</a>
+                <a href="#projects" class="nav-link">MY PROJECTS</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#contact" class="nav-link">CONTACT ME</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div id="main-container">
-            <header>
+    <div id="main-container">
+        <header>
+            <div class="headers">
+                <h1>Jakub Kupczyk</h1>
+            </div>
+        </header>
+
+        <main>
+            <section id="about-me">
                 <div class="headers">
-                    <h1>Jakub Kupczyk</h1>
+                    <h2>About me</h2>
                 </div>
-            </header>
-
-            <main>
-                <section id="about-me">
-                    <div class="headers">
-                        <h2>About me</h2>
+                <div id="display-about">
+                    <div id="about-text">
+                        <p>
+                            My name is <strong>Jacob</strong> and I am a Backend Developer, amateur astronomer and owner
+                            of 6" telescope <span id="easter-egg">🔭</span>
+                        </p>
                     </div>
-                    <div id="display-about">
-                        <div id="about-text">
-                            <p>
-                                My name is <strong>Jacob</strong> and I am a Backend Developer, amateur astronomer and owner of 6" telescope <span id="easter-egg">🔭</span>
+
+                    <div id="photo">
+                        <img src="img/me.jpg" width="300px" height="300px" alt="Photo of me">
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="projects">
+
+                <div class="headers">
+                    <h2>My projects</h2>
+                </div>
+
+                <div id="project-list">
+                    <div class="project" id="project-1">
+                        <a href="https://github.com/jkbkupczyk/covid-client">
+                            <img src="img/project/covid.png" class="project-image" alt="My first project">
+                        </a>
+                        <h3 class="project-title">Covid Client</h3>
+                        <div class="project-description">
+                            <p>Covid Client is a Spring Boot App for retrieving info about COVID19 infections.
+                                App returns usefull info about covid in different countries.
                             </p>
                         </div>
-
-                        <div id="photo">
-                            <img src="img/me.jpg" alt="Photo of me">
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="projects">
-
-                    <div class="headers">
-                        <h2>My projects</h2>
-                    </div>
-
-                    <div id="project-list">
-                        <div class="project" id="project-1">
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/covid-client">
-                                <img src="img/project/covid.png" class="project-image" alt="My first project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Covid Client</h3>
-                            <div class="project-description">
-                                <p>Covid Client is a Spring Boot App for retrieving info about COVID19 infections. 
-                                    App returns usefull info about covid in different countries.
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/covid-client">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="project" id="project-2">
+                    <div class="project" id="project-2">
+                        <a href="https://github.com/jkbkupczyk/gif-uploader">
+                            <img src="img/project/gif.png" class="project-image" alt="My second project">
+                        </a>
+                        <h3 class="project-title">Gif Uploader</h3>
+                        <div class="project-description">
+                            <p>As its name suggests, Gif Uploader is a app for uploading gifs. App is made with Spring
+                                Security and Vaadin
+                            </p>
+                        </div>
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/gif-uploader">
-                                <img src="img/project/gif.png" class="project-image" alt="My second project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Gif Uploader</h3>
-                            <div class="project-description">
-                                <p>As its name suggests, Gif Uploader is a app for uploading gifs. App is made with Spring Security and Vaadin
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/gif-uploader">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="project" id="project-3">
+                    <div class="project" id="project-3">
+                        <a href="https://github.com/jkbkupczyk/binary-tree">
+                            <img src="img/project/fractal.png" class="project-image" alt="My third project">
+                        </a>
+                        <h3 class="project-title">Binary Tree</h3>
+                        <div class="project-description">
+                            <p>Visualization of binary fractal tree made in c++ and SFML lib.
+                                In IT fractal tree is a tree data structure that keeps data sorted.
+                                Default tree color is pink.
+                            </p>
+                        </div>
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/binary-tree">
-                                <img src="img/project/fractal.png" class="project-image" alt="My third project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Binary Tree</h3>
-                            <div class="project-description">
-                                <p>Visualization of binary fractal tree made in c++ and SFML lib.
-                                    In IT fractal tree is a tree data structure that keeps data sorted.
-                                    Default tree color is pink.
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/binary-tree">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="project" id="project-4">
+                    <div class="project" id="project-4">
+                        <a href="https://github.com/jkbkupczyk/fun-gram">
+                            <img src="img/project/fun-gram.png" class="project-image" alt="My fourth project">
+                        </a>
+                        <h3 class="project-title">Fun-Gram</h3>
+                        <div class="project-description">
+                            <p>Fun-Gram is a image processing software made with c++ and Qt.
+                                You can save your drawings or filter, ex. you can use Gauss Blur to make image more
+                                blurred.
+                            </p>
+                        </div>
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/fun-gram">
-                                <img src="img/project/fun-gram.png" class="project-image" alt="My fourth project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Fun-Gram</h3>
-                            <div class="project-description">
-                                <p>Fun-Gram is a image processing software made with c++ and Qt. 
-                                    You can save your drawings or filter, ex. you can use Gauss Blur to make image more blurred.
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/fun-gram">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="project" id="project-5">
+                    <div class="project" id="project-5">
+                        <a href="https://github.com/jkbkupczyk/currency-calculator">
+                            <img src="img/project/calc.png" class="project-image" alt="My fifth project">
+                        </a>
+                        <h3 class="project-title">Currency Calculator</h3>
+                        <div class="project-description">
+                            <p>Currency calculator is a web app that consumes exchange rates api.
+                                For example you can search for EURO prices in different currencies.
+                            </p>
+                        </div>
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/currency-calculator">
-                                <img src="img/project/calc.png" class="project-image" alt="My fifth project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Currency Calculator</h3>
-                            <div class="project-description">
-                                <p>Currency calculator is a web app that consumes exchange rates api. 
-                                    For example you can search for EURO prices in different currencies.
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/currency-calculator">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="project" id="project-6">
+                    <div class="project" id="project-6">
+                        <a href="https://github.com/jkbkupczyk/py-load">
+                            <img src="img/project/python.png" class="project-image" alt="My sixth project">
+                        </a>
+                        <h3 class="project-title">Py-Load</h3>
+                        <div class="project-description">
+                            <p>Py-Load is a tool for creating images from pbm files.
+                                PBM are image file format designed to be easly accessible between different platform.
+                            </p>
+                        </div>
+                        <div class="project-github">
                             <a href="https://github.com/jkbkupczyk/py-load">
-                                <img src="img/project/python.png" class="project-image" alt="My sixth project">
+                                <img src="img/GitHub-Mark-32px.png" alt="Github logo">
                             </a>
-                            <h3 class="project-title">Py-Load</h3>
-                            <div class="project-description">
-                                <p>Py-Load is a tool for creating images from pbm files. 
-                                    PBM are image file format designed to be easly accessible between different platform.
-                                </p>
-                            </div>
-                            <div class="project-github">
-                                <a href="https://github.com/jkbkupczyk/py-load">
-                                    <img src="img/GitHub-Mark-32px.png" alt="Github logo">
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="skills">
-                    <div class="headers">
-                        <h2>Skills</h2>
-                    </div>
-
-                    <div id="skills-list">
-                        <div id="s1" class="skill">
-                            <a href="https://www.oracle.com/java/" class="skill-image">
-                                <img src="img/java.png" class="imgs" alt="Java logo">
-                            </a>
-                            <h4>Java</h4>
-                        </div>
-
-                        <div id="s2" class="skill">
-                            <a href="https://spring.io/" class="skill-image">
-                                <img src="img/spring.png" class="imgs" alt="Spring Boot(Java Framework) logo">
-                            </a>
-                            <h4>Spring</h4>
-                        </div>
-
-                        <div id="s3" class="skill">
-                            <a href="https://git-scm.com/" class="skill-image">
-                                <img src="img/Git-Icon.png" class="imgs" alt="Git logo">
-                            </a>
-                            <h4>Git</h4>
-                        </div>
-
-                        <div id="s4" class="skill">
-                            <a href="https://www.postgresql.org/" class="skill-image">
-                                <img src="img/PostgreSQL.png" class="imgs" alt="PostgreSQL logo">
-                            </a>
-                            <h4>PostgreSQL</h4>
-                        </div>
-
-                        <div id="s5" class="skill">
-                            <a href="https://www.docker.com/" class="skill-image">
-                                <img src="img/docker.png" class="imgs" alt="Docker logo">
-                            </a>
-                            <h4>Docker</h4>
-                        </div>
-
-                        <div id="s6" class="skill">
-                            <a href="img/stack.png" class="skill-image">
-                                <img src="img/stack.png" class="imgs inactive" alt="Web stack logo">
-                            </a>
-                            <h4>Web Dev</h4>
-                        </div>
-
-                        <div id="s7" class="skill">
-                            <a href="https://isocpp.org/" class="skill-image">
-                                <img src="img/c++.svg.png" class="imgs" alt="c++ logo">
-                            </a>
-                            <h4>C++</h4>
-                        </div>
-
-                        <div id="s8" class="skill">
-                            <a href="https://www.qt.io/" class="skill-image">
-                                <img src="img/qt.png" class="imgs" alt="Qt logo">
-                            </a>
-                            <h4>Qt</h4>
                         </div>
                     </div>
-                </section>
 
-                <section id="contact">
-                    <div class="headers">
-                        <h2>Contact me</h2>
-                    </div>
-                    <div id="socials">
-                        <a href="https://github.com/jkbkupczyk" class="social">
-                            <img src="img/GitHub-Mark-64px.png" alt="Github logo">
-                        </a>
-                        <a href="https://www.linkedin.com/in/jakub-kupczyk/" class="social">
-                            <img src="img/LinkedIn-64.png" alt="Linkedin logo">
-                        </a>
-                    </div>
-                    <div id="contact-form">
-                        <form action="messageform.php" method="POST" onsubmit="foo(); return false;">
-                            <input type="text" name="name" id="name" placeholder="Your name..." required>
-                            <input type="email" name="email" id="email" placeholder="Your email..." required>
-                            <textarea name="msg" id="msg" cols="30" rows="2" maxlength="200" placeholder="Your message goes here..."></textarea>
-                            <button type="submit" id="send">Send</button>
-                            <br>
-                            <span id="form-info"></span>
-                        </form>
-                    </div>
-                </section>
-            </main>
-
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; Jakub Kupczyk | 2020</p>
                 </div>
-            </footer>
+            </section>
 
-        </div>
+            <section id="skills">
+                <div class="headers">
+                    <h2>Skills</h2>
+                </div>
 
-        <script src="src/js/script.js"></script>
-    </body>
+                <div id="skills-list">
+                    <div id="s1" class="skill">
+                        <a href="https://www.oracle.com/java/" class="skill-image">
+                            <img src="img/java.png" class="imgs" alt="Java logo">
+                        </a>
+                        <h4>Java</h4>
+                    </div>
+
+                    <div id="s2" class="skill">
+                        <a href="https://spring.io/" class="skill-image">
+                            <img src="img/spring.png" class="imgs" alt="Spring Boot(Java Framework) logo">
+                        </a>
+                        <h4>Spring</h4>
+                    </div>
+
+                    <div id="s3" class="skill">
+                        <a href="https://git-scm.com/" class="skill-image">
+                            <img src="img/Git-Icon.png" class="imgs" alt="Git logo">
+                        </a>
+                        <h4>Git</h4>
+                    </div>
+
+                    <div id="s4" class="skill">
+                        <a href="https://www.postgresql.org/" class="skill-image">
+                            <img src="img/PostgreSQL.png" class="imgs" alt="PostgreSQL logo">
+                        </a>
+                        <h4>PostgreSQL</h4>
+                    </div>
+
+                    <div id="s5" class="skill">
+                        <a href="https://www.docker.com/" class="skill-image">
+                            <img src="img/docker.png" class="imgs" alt="Docker logo">
+                        </a>
+                        <h4>Docker</h4>
+                    </div>
+
+                    <div id="s6" class="skill">
+                        <a href="img/stack.png" class="skill-image">
+                            <img src="img/stack.png" class="imgs inactive" alt="Web stack logo">
+                        </a>
+                        <h4>Web Dev</h4>
+                    </div>
+
+                    <div id="s7" class="skill">
+                        <a href="https://isocpp.org/" class="skill-image">
+                            <img src="img/c++.svg.png" class="imgs" alt="c++ logo">
+                        </a>
+                        <h4>C++</h4>
+                    </div>
+
+                    <div id="s8" class="skill">
+                        <a href="https://www.qt.io/" class="skill-image">
+                            <img src="img/qt.png" class="imgs" alt="Qt logo">
+                        </a>
+                        <h4>Qt</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="headers">
+                    <h2>Contact me</h2>
+                </div>
+                <div id="socials">
+                    <a href="https://github.com/jkbkupczyk" class="social">
+                        <img src="img/GitHub-Mark-64px.png" alt="Github logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jakub-kupczyk/" class="social">
+                        <img src="img/LinkedIn-64.png" alt="Linkedin logo">
+                    </a>
+                </div>
+                <div id="contact-form">
+                    <form action="messageform.php" method="POST" onsubmit="foo(); return false;">
+                        <input type="text" name="name" id="name" placeholder="Your name..." required>
+                        <input type="email" name="email" id="email" placeholder="Your email..." required>
+                        <textarea name="msg" id="msg" cols="30" rows="2" maxlength="200"
+                            placeholder="Your message goes here..."></textarea>
+                        <button type="submit" id="send">Send</button>
+                        <br>
+                        <span id="form-info"></span>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Jakub Kupczyk | 2020</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+
 </html>

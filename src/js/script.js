@@ -1,11 +1,11 @@
-function sleep(x){
+function sleep(x) {
     return new Promise((resolve) => setTimeout(resolve, x));
 }
 
-function foo(){
+function foo() {
     document.querySelector("#send").style.animation = "sweep 2s linear 1";
 
-    sleep(2050).then( () => {
+    sleep(2050).then(() => {
         document.querySelector("#form-info").innerHTML = "Email  sent!";
     })
 }

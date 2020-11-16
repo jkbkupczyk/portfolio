@@ -1,11 +1,11 @@
-@media screen and (max-width: 640px){
-    #nav-button{
+@media screen and (max-width: 640px) {
+    #nav-button {
         min-width: 25%;
         overflow: visible;
     }
 }
 
-#nav-wrapper{
+#nav-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -14,7 +14,7 @@
     top: 0;
 }
 
-#nav-content{
+#nav-content {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -23,14 +23,14 @@
     background-color: rgba(248, 152, 32, 0.8);
 }
 
-#nav-content a{
+#nav-content a {
     padding: 0 10px 0 10px;
     text-decoration: none;
     color: black;
     font-size: larger;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     animation: push 0.25s linear;
 }
 
@@ -47,6 +47,7 @@
         transform: scale(0.8);
         -webkit-transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
         -webkit-transform: scale(1);
